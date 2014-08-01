@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'neutonregular';
+    src: url('fonts/neuton-regular-webfont.eot');
+    src: url('fonts/neuton-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/neuton-regular-webfont.woff') format('woff'),
+         url('fonts/neuton-regular-webfont.ttf') format('truetype'),
+         url('fonts/neuton-regular-webfont.svg#neutonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neutonlight';
+    src: url('fonts/neuton-light-webfont.eot');
+    src: url('fonts/neuton-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/neuton-light-webfont.woff') format('woff'),
+         url('fonts/neuton-light-webfont.ttf') format('truetype'),
+         url('fonts/neuton-light-webfont.svg#neutonlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'neuton_cursiveregular';
+    src: url('fonts/neutoncursive-regular-webfont.eot');
+    src: url('fonts/neutoncursive-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/neutoncursive-regular-webfont.woff') format('woff'),
+         url('fonts/neutoncursive-regular-webfont.ttf') format('truetype'),
+         url('fonts/neutoncursive-regular-webfont.svg#neuton_cursiveregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face{font-family:'sweet_home_oklahomaregular';src:url('fonts/sweet_home_oklahoma-webfont.eot');src:url('fonts/sweet_home_oklahoma-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/sweet_home_oklahoma-webfont.woff') format('woff'),url('fonts/sweet_home_oklahoma-webfont.ttf') format('truetype'),url('fonts/sweet_home_oklahoma-webfont.svg#sweet_home_oklahomaregular') format('svg');font-weight:400;font-style:normal}@font-face{font-family:'Forum';src:url('fonts/forum-regular-webfont.eot');src:url('fonts/forum-regular-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/forum-regular-webfont.woff') format('woff'),url('fonts/forum-regular-webfont.ttf') format('truetype'),url('fonts/forum-regular-webfont.svg#forum-regular') format('svg');font-weight:400;font-style:normal}@font-face{font-family:'crystal';src:url('fonts/crystal-webfont.eot');src:url('fonts/crystal-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/crystal-webfont.woff') format('woff'),url('fonts/crystal-webfont.ttf') format('truetype'),url('fonts/crystal-webfont.svg#crystal') format('svg');font-weight:400;font-style:normal}#animation li{color:#fff;position:fixed;display:block;top:-10px;opacity:0;font-family:'sweet_home_oklahomaregular';font-size:220px;text-align:center;width:50%;left:50%;margin:0 0 0 -25%;height:150px;cursor:url('../cur/Hand.png'),auto}#animation li:nth-of-type(1){text-shadow:0 0 10px #000;-webkit-animation:fadein 6s ease-in-out -4s infinite alternate;-moz-animation:fadein 6s ease-in-out -4s infinite alternate;animation:fadein 6s ease-in-out -4s infinite alternate}#animation li:nth-of-type(2){text-shadow:0 0 10px #08f;-webkit-animation:fadein 6s ease-in-out 0 infinite alternate;-moz-animation:fadein 6s ease-in-out 0s infinite alternate;animation:fadein 6s ease-in-out 0s infinite alternate}#animation li:nth-of-type(3){text-shadow:0 0 10px #fff}#animation li:nth-of-type(3),#animation li:nth-of-type(4){-webkit-animation:fadein 6s ease-in-out 4s infinite alternate;-moz-animation:fadein 6s ease-in-out 4s infinite alternate;animation:fadein 6s ease-in-out 4s infinite alternate}#animation li:nth-of-type(4){text-shadow:0 0 10px #0cf}@-webkit-keyframes fadein{0%{opacity:0}66%{opacity:.5}76%,100%{opacity:1}}@-moz-keyframes fadein{0%{opacity:0}66%{opacity:.5}76%,100%{opacity:1}}@keyframes fadein{0%{opacity:0}66%{opacity:.5}76%,100%{opacity:1}}

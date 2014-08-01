@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Leita.cz - Czech Alternative Painter</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+   	<link rel="stylesheet" type="text/css" href="css/title.css" media="screen" />
+
+
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a class="navbar-brand">Leita</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="javascript:link('home')" class="link_home">Home</a>
+                    </li>
+                    <li><a href="javascript:link('gallery')" class="link_gallery">Gallery</a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<div id="content" class="container">
+<div id="loader" style="display:none" ><img src="loading.gif"/></div>
+<div id="page"></div>
+
+
+</div>
+
+
+
+
+        <script>
+
+        function link(name){
+/* $('.link_'+name).click(function(){
+	$('#page').fadeOut('fast').hide()
+	$('#loader').css({'display':'initial'})
+	$('#page').load(name+'.html',function(){
+	$('#loader').css({'display':'none'});
+	$('#page').fadeIn('slow');
+	});
+});
+} */
+ $('.link_'+name).click(function(){
+	$('#page').fadeOut('fast');
+
+	$('#page').load(name+'.html').fadeIn('slow');
+
+});
+}
+
+
+
+
+
+
+
+$(document).ready(function(){
+    $("#page").load("home.html");
+  });
+
+</script>
+</body>
+</html>
