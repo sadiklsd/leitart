@@ -1,0 +1,41 @@
+<paints>
+
+
+      <paint>
+        <file>
+            heart.jpg
+        </file>
+        <description>
+            Le coeur dans la main
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+
+      <paint>
+        <file>
+            amazon.jpg
+        </file>
+        <description>
+            Le coeur dans la main
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+          <paint>
+        <file>
+            children.jpg
+        </file>
+        <description>
+            Le coeur dans la main
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+</paints>

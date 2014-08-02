@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-	<title>Leita.cz - Czech Alternative Painter</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-
-   	<link rel="stylesheet" type="text/css" href="css/title.css" media="screen" />
+    <title>Leita.cz - Czech Alternative Painter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/title.css" media="screen" />
+<script src="//code.jquery.com/jquery-latest.js"></script>
 
 
 
 </head>
+
 <body>
 
 
@@ -26,9 +27,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="javascript:link('home')" class="link_home">Home</a>
+                    <li><a href="javascript:link('home')">Home</a>
                     </li>
-                    <li><a href="javascript:link('gallery')" class="link_gallery">Gallery</a>
+                    <li><a href="javascript:link('gallery')">Gallery</a>
                     </li>
 
 
@@ -40,46 +41,67 @@
         <!-- /.container -->
     </nav>
 
-<div id="content" class="container">
-<div id="loader" style="display:none" ><img src="loading.gif"/></div>
-<div id="page"></div>
-
-
-</div>
-
-
-
-
-        <script>
-
-        function link(name){
-/* $('.link_'+name).click(function(){
-	$('#page').fadeOut('fast').hide()
-	$('#loader').css({'display':'initial'})
-	$('#page').load(name+'.html',function(){
-	$('#loader').css({'display':'none'});
-	$('#page').fadeIn('slow');
-	});
-});
-} */
- $('.link_'+name).click(function(){
-	$('#page').fadeOut('fast');
-
-	$('#page').load(name+'.html').fadeIn('slow');
-
-});
-}
+    <div id="content" class="container">
+        <div id="loader" style="display:none">
+            <img src="loading.gif" />
+        </div>
+        <div id="page"></div>
 
 
 
 
+    </div>
 
 
 
-$(document).ready(function(){
-    $("#page").load("home.html");
-  });
 
-</script>
+    <script>
+
+        test = "home";
+        function link(name) {
+            if (test != name && name != 'gallery') {
+                $('#page').hide().load(name + '.html').fadeIn('slow');
+            } else if (test != name && name == 'gallery') {
+                page = ""
+                $.ajax({
+                    type: "GET",
+                    url: "paints.xml",
+                    dataType: "xml",
+                    success: function (xml) {
+                        $(xml).find('paint').each(
+                            function () {
+                                var file = $(this).find('file').text();
+                                var description = $(this).find('description').text();
+                                description = description.split('\n').join('').split(' ').join('')
+                                file = file.split('\n').join('').split(' ').join('')
+                              page += '<div class="col-lg-3"><a  class="thumbnail" href="paints/' + file + '" title="' + description + '" data-featherlight="image">	<div class="cut"><img class="img-responsive" src="paints/thumb/' + file +'" /></div></a></div>';
+
+
+
+
+
+
+                            });
+
+                        $('#page').hide().html(page).fadeIn('slow');
+                    }
+                });
+
+
+            };
+
+            test = name;
+
+        };
+
+        $(document).ready(
+            function () {
+
+
+link('gallery')
+            }
+        );
+    </script>
 </body>
+
 </html>
