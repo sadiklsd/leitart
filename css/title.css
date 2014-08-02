@@ -80,6 +80,20 @@ box-shadow:#09f 0 0px 10px;
 
 
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gallery {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.gallery li {
+    float: left;
+    margin: 4px;
+}
 
 
 

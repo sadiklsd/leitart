@@ -1,40 +1,70 @@
-	<title>Leita.cz - Czech Alternative Painter</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+    <head>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/jquery.lightbox.min.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquery.lightbox.js"></script>
 
-   	<link rel="stylesheet" type="text/css" href="css/title.css" media="screen" />
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                font-size: 1rem;
+                color: #333;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .gallery {
+                list-style: none;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+            }
+            .gallery li {
+                float: left;
+                margin: 4px;
+            }
+
+        </style>
+    </head>
+    <body>
+            <ul class="gallery">
+                <li>
+                    <a href="paints/amazon.jpg" class="thumbnail" data-caption="This is Venice. This is Venice. This is Venice. This is Venice. This is Venice">
+                        <div class="cut"> <img class="img-responsive" src="paints/thumb/amazon.jpg" alt="Image"></div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="paints/amazon.jpg" class="thumbnail" data-caption="This is Venice. This is Venice. This is Venice. This is Venice. This is Venice">
+                        <div class="cut"> <img class="img-responsive" src="paints/thumb/amazon.jpg" alt="Image"></div>
+                    </a>
+                </li>   <li>
+                <a href="paints/amazon.jpg" class="thumbnail" data-caption="This is Venice. This is Venice. This is Venice. This is Venice. This is Venice">
+                    <div class="cut"> <img class="img-responsive" src="paints/thumb/amazon.jpg" alt="Image"></div>
+                </a>
+                </li>   <li>
+                <a href="paints/amazon.jpg" class="thumbnail" data-caption="This is Venice. This is Venice. This is Venice. This is Venice. This is Venice">
+                    <div class="cut"> <img class="img-responsive" src="paints/thumb/amazon.jpg" alt="Image"></div>
+                </a>
+                </li>   <li>
+                <a href="paints/amazon.jpg" class="thumbnail" data-caption="This is Venice. This is Venice. This is Venice. This is Venice. This is Venice">
+                    <div class="cut"> <img class="img-responsive" src="paints/thumb/amazon.jpg" alt="Image"></div>
+                </a>
+                </li>
+            </ul>
 
 
 
-
-
-
-
-<div id="content"></div>
-
-<script>
-    $(document).ready(
-        function () {
-            $.ajax({
-                type: "GET",
-                url: "paints.xml",
-                dataType: "xml",
-                success: function (xml) {
-                    $(xml).find('paint').each(
-                        function () {
-                            var file = $(this).find('file').text();
-                            var description = $(this).find('description').text();
-
-                            description = description.split('\n').join('').split(' ').join('')
-
-                            file = file.split('\n').join('').split(' ').join('')
-                            $('#content').append('<div class="col-lg-3"><a class="fancybox-effect thumbnail" href="paints/' + file + '" data-lightbox="gallery1" title="' + description + '">	<div class="cut"><img class="img-responsive" src="paints/thumb/' + file + '" alt="" /></div></a></div>');
-
-                        });
-                }
+        <script>
+            // Initiate Lightbox
+            $(function() {
+                $('.gallery a').lightbox();
             });
-        }
-    );
-</script>
+        </script>
+    </body>
+</html>

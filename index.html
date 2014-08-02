@@ -2,13 +2,16 @@
 <html>
 
 <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.lightbox.js"></script>
+
 
     <title>Leita.cz - Czech Alternative Painter</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script src="js/bootstrap.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/title.css" media="screen" />
-<script src="//code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox.min.css">
 
 
 
@@ -42,10 +45,7 @@
     </nav>
 
     <div id="content" class="container">
-        <div id="loader" style="display:none">
-            <img src="loading.gif" />
         </div>
-        <div id="page"></div>
 
 
 
@@ -60,9 +60,9 @@
         test = "home";
         function link(name) {
             if (test != name && name != 'gallery') {
-                $('#page').hide().load(name + '.html').fadeIn('slow');
+                $('#content').hide().load(name + '.html').fadeIn('slow');
             } else if (test != name && name == 'gallery') {
-                page = ""
+                page = '<ul class="gallery">'
                 $.ajax({
                     type: "GET",
                     url: "paints.xml",
@@ -74,7 +74,7 @@
                                 var description = $(this).find('description').text();
                                 description = description.split('\n').join('').split(' ').join('')
                                 file = file.split('\n').join('').split(' ').join('')
-                              page += '<div class="col-lg-3"><a  class="thumbnail" href="paints/' + file + '" title="' + description + '" data-featherlight="image">	<div class="cut"><img class="img-responsive" src="paints/thumb/' + file +'" /></div></a></div>';
+         page += '<li><a href="paints/'+file+'" class="thumbnail" data-caption="'+description+'"><div class="cut"> <img class="img-responsive" src="paints/thumb/'+file+'" alt="Image"></div></a></li>';
 
 
 
@@ -82,8 +82,9 @@
 
 
                             });
+                        page+='</ul>'
 
-                        $('#page').hide().html(page).fadeIn('slow');
+                        $('#content').hide().html(page).fadeIn('slow');
                     }
                 });
 
@@ -101,6 +102,12 @@
 link('gallery')
             }
         );
+
+
+        // Initiate Lightbox
+        $(function() {
+            $('.gallery a').lightbox();
+        });
     </script>
 </body>
 
