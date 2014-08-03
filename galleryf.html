@@ -1,28 +1,19 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.lightbox.js"></script>
 
 
 <title>Leita.cz - Czech Alternative Painter</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/title.css" media="screen" />
-<script src="js/lightGallery.js"></script>
-<link rel="stylesheet"  href="css/lightGallery.css"/>
-
-<div style="margin-top:40px;" id="gal"></div>
-
-
-
-
-
-
-
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox.css">
 
 
 <script>
     $(document).ready(
         function () {
-            page = '<ul id="auto-loop" class="gallery">'
+            page = '<ul class="gallery">'
             $.ajax({
                 type: "GET",
                 url: "paints.xml",
@@ -32,13 +23,14 @@
                         function () {
                             var file = $(this).find('file').text();
                             var description = $(this).find('description').text();
+                            description = description.split('\n').join('').split(' ').join('')
                             file = file.split('\n').join('').split(' ').join('')
-                            page += '<li  data-title="'+description+'" data-desc="description2" data-src="paints/'+file+'"><a  class="thumbnail"  class="img-responsive" href="#"><div class="cut"><img  src="paints/thumb/'+file+'" /></div></a></li>';
+                            page += '<li><a href="paints/'+file+'" data-lightbox="image-1"  class="thumbnail" data-caption="'+description+'"><div class="cut"> <img class="img-responsive" src="paints/thumb/'+file+'" alt="Image"></div></a></li>';
                         });
-                    page+='</ul><script>$(document).ready(function() {$("#auto-loop").lightGallery({caption:true,mode:\'fade\'});});<\/script>';
-                    $('#gal').empty().append(page).fadeIn('slow');
+                    page+='</ul><script>$(function() {$(".gallery a").lightbox();});<\/script>'
+                    $('#content').empty().append(page).fadeIn('slow');
                 }
             });
         });
-
 </script>
+    <div id="content"></div>

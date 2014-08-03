@@ -1,105 +1,106 @@
-body{
-text-align:center;
-
-  }
-
-
-
-
-@font-face{font-family:'sweet_home_oklahomaregular';src:url('fonts/sweet_home_oklahoma-webfont.eot');src:url('fonts/sweet_home_oklahoma-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/sweet_home_oklahoma-webfont.woff') format('woff'),url('fonts/sweet_home_oklahoma-webfont.ttf') format('truetype'),url('fonts/sweet_home_oklahoma-webfont.svg#sweet_home_oklahomaregular') format('svg');font-weight:400;font-style:normal}
-@font-face{font-family:'Forum';src:url('fonts/forum-regular-webfont.eot');src:url('fonts/forum-regular-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/forum-regular-webfont.woff') format('woff'),url('fonts/forum-regular-webfont.ttf') format('truetype'),url('fonts/forum-regular-webfont.svg#forum-regular') format('svg');font-weight:400;font-style:normal}
-@font-face{font-family:'crystal';src:url('fonts/crystal-webfont.eot');src:url('fonts/crystal-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/crystal-webfont.woff') format('woff'),url('fonts/crystal-webfont.ttf') format('truetype'),url('fonts/crystal-webfont.svg#crystal') format('svg');font-weight:400;font-style:normal}
-
-.navbar-brand{
-		font-family: 'sweet_home_oklahomaregular';
-font-size: 50px;
-color:#09c !important;
-font-weight:600;
-text-shadow:1px 1px 10px #000;
-}
-h1
-{
-font-size: 70px;
-  font-family: 'sweet_home_oklahomaregular';
-	padding: 0 !important;
-	margin: 0 !important;
-}
-.logo{
-	text-shadow:0 0 5px #09f;
-float: right;
-
-}
-.cut{
-height:189px;
-overflow: hidden;
-
-}
-.right_cont{
-float: right;
-opacity: .3;
+@font-face{font-family:'sweet_home_oklahomaregular';src:url('fonts/sweet_home_oklahoma-webfont.eot');src:url('fonts/sweet_home_oklahoma-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/sweet_home_oklahoma-webfont.woff') format('woff'),
+url('fonts/sweet_home_oklahoma-webfont.ttf') format('truetype'),
+url('fonts/sweet_home_oklahoma-webfont.svg#sweet_home_oklahomaregular') format('svg');
+font-weight:400;
+font-style:normal
 }
 
-
-
-
-h1{
-  text-align:center;
-  font-size:200px;
-  text-shadow:4px 4px 10px #09c,-5px -5px 10px #f90;
-  }
-
-h2{
-  font-size: 70px;
-  font-family: 'sweet_home_oklahomaregular';
-  text-align:center;
-  text-shadow:4px 4px 10px #09c,-5px -5px 10px #f90;
-  }
-h3{
-opacity:.6;
-text-align:center;
-width:400px;
-margin-left:-60px;
-margin-top:-200px;
-background:#000	;
-transform:rotate(-20deg);
-		font-family: 'sweet_home_oklahomaregular';
-font-size:50px;
-padding:0;
-box-shadow:#09f 0 0px 10px;
+@font-face{font-family:'Forum';src:url('fonts/forum-regular-webfont.eot');src:url('fonts/forum-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/forum-regular-webfont.woff') format('woff'),
+url('fonts/forum-regular-webfont.ttf') format('truetype'),
+url('fonts/forum-regular-webfont.svg#forum-regular') format('svg');
+font-weight:400;
+font-style:normal
 }
 
-#content{
-  margin-top:45px;}
-
-
-
-
-.col-lg-3{
-  max-width:300px;}
-
-
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+@font-face{font-family:'crystal';src:url('fonts/crystal-webfont.eot');src:url('fonts/crystal-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/crystal-webfont.woff') format('woff'),
+url('fonts/crystal-webfont.ttf') format('truetype'),
+url('fonts/crystal-webfont.svg#crystal') format('svg');
+font-weight:400;
+font-style:normal
 }
+
+.navbar-brand {
+    font-family:'sweet_home_oklahomaregular';
+    font-size:50px;
+    color:#09c !important;
+    font-weight:600;
+    text-shadow:1px 1px 10px #000;
+}
+
+h1 {
+    font-size:70px;
+    font-family:'sweet_home_oklahomaregular';
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.logo {
+    text-shadow:0 0 5px #09f;
+    float:right;
+}
+
+.cut {
+    height:189px;
+    overflow:hidden;
+}
+.right_cont {
+    float:right;
+    opacity:.3;
+}
+
+h1 {
+    text-align:center;
+    font-size:200px;
+    text-shadow:4px 4px 10px #09c,
+    -5px -5px 10px #f90;
+}
+
+h2 {
+    font-size:70px;
+    font-family:'sweet_home_oklahomaregular';
+    text-align:center;
+    text-shadow:4px 4px 10px #09c,
+    -5px -5px 10px #f90;
+}
+
+h3 {
+    opacity:.6;
+    text-align:center;
+    width:400px;
+    margin-left:-60px;
+    margin-top:-200px;
+    background:#000;
+    transform:rotate(-20deg);
+    font-family:'sweet_home_oklahomaregular';
+    font-size:50px;
+    padding:0;
+    box-shadow:#09f 0 0px 10px;
+}
+#content {
+    margin-top:45px;
+}
+
+
 .gallery {
-    list-style: none;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
+    list-style:none;
+    padding:0;
+    margin:0;
 }
 .gallery li {
-    float: left;
-    margin: 4px;
+    margin: auto;
+    float:left;
+    margin:10px;
+}
+.thumbnail {
+    max-width:250px;
 }
 
 
 
-
-
-
-
-
-
+body{
+    background: #000 ;
+    background-size: cover;
+        }

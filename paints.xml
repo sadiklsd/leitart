@@ -1,7 +1,7 @@
 <paints>
 
 
-      <paint>
+    <paint>
         <file>
             heart.jpg
         </file>
@@ -14,24 +14,39 @@
 
     </paint>
 
-      <paint>
+    <paint>
         <file>
             amazon.jpg
         </file>
         <description>
-            Le coeur dans la main
-        </description>
+            Amazon Mona Lisa
+            </description>
         <status>
             Sold
         </status>
 
     </paint>
-          <paint>
+    <paint>
         <file>
             children.jpg
         </file>
         <description>
-            Le coeur dans la main
+            children
+            </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+
+
+
+    <paint>
+        <file>
+            buena.jpg
+        </file>
+        <description>
+            Buena Vista Social Club
         </description>
         <status>
             Sold
