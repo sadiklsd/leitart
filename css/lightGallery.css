@@ -305,7 +305,7 @@
 	width: 28px;
 	height: 28px;
 	font-family: 'Slide-icons';
-	color: #FFF;
+	color: #ccc;
 	cursor: pointer;
 }
 #lightGallery-action a.disabled {
@@ -381,12 +381,12 @@
 	padding: 7px 20px;
 }
 #lightGallery-Gallery .thumb_cont .thumb_info .count {
-	color: #ffffff;
+	color: #09f;
 	font-weight: bold;
 	font-size: 12px;
 }
 #lightGallery-Gallery .thumb_cont .thumb_info .close {
-	color: #FFFFFF;
+	color: #f90;
 	display: block;
 	float: right !important;
 	width: 28px;
@@ -507,6 +507,10 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+
+#lightGallery-slider .info .size{
+color: #09f;
 }
 #lightGallery-slider .info span {
 	display: block;

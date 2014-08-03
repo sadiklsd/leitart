@@ -65,19 +65,20 @@ h2 {
     text-shadow:4px 4px 10px #09c,
     -5px -5px 10px #f90;
 }
-
 h3 {
+    height: 25px;   
+    position: absolute;
+    left: 0;
+    float: left;
+    top:0%;
     opacity:.6;
     text-align:center;
-    width:400px;
-    margin-left:-60px;
-    margin-top:-200px;
+    width:250px;
     background:#000;
-    transform:rotate(-20deg);
-    font-family:'sweet_home_oklahomaregular';
-    font-size:50px;
+    font-size:20px;
     padding:0;
-    box-shadow:#09f 0 0px 10px;
+    margin: 0;
+    box-shadow:#09f 0 0 0px;
 }
 #content {
     margin-top:45px;
@@ -95,12 +96,27 @@ h3 {
     margin:10px;
 }
 .thumbnail {
+    position:relative;
     max-width:250px;
 }
 
 
 
 body{
-    background: #000 ;
-    background-size: cover;
+ 
+    width: 100%;
+    height: 100%;
+    
+    
+    background: #003264; /* Old browsers */
+
+background: linear-gradient(to right,  #001530 0%,#000000 50%,#000 100%); /* W3C */
+ 
         }
+
+.navbar{
+    background: linear-gradient(to left,  #001530 0%,#000000 50%,#000 100%); /* W3C */
+
+    
+    
+}

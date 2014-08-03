@@ -5,11 +5,16 @@
         <file>
             heart.jpg
         </file>
-        <description>
-            Le coeur dans la main
+     
+        <caption>
+                    Le coeur dans la main
+
+        </caption>
+           <description>
+               140 x 120 cm
         </description>
         <status>
-            Sold
+            none
         </status>
 
     </paint>
@@ -18,8 +23,11 @@
         <file>
             amazon.jpg
         </file>
-        <description>
+            <caption>
             Amazon Mona Lisa
+
+        </caption>
+        <description>
             </description>
         <status>
             Sold
@@ -30,8 +38,11 @@
         <file>
             children.jpg
         </file>
+        <caption>
+children
+        </caption>
         <description>
-            children
+            
             </description>
         <status>
             Sold
@@ -57,11 +68,14 @@
         <file>
             saya.jpg
         </file>
-        <description>
+           <caption>
            Saya
+           </caption>
+        <description>
+           120 x 140 cm
         </description>
         <status>
-            Sold
+            Private
         </status>
 
     </paint>

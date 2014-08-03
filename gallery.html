@@ -33,10 +33,20 @@
                         function () {
                             var file = $(this).find('file').text();
                             var description = $(this).find('description').text();
+                            var caption = $(this).find('caption').text();
+                            var status = $(this).find('status').text();
                             file = file.split('\n').join('').split(' ').join('')
-                            page += '<li  data-title="'+description+'" data-desc="description2" data-src="paints/'+file+'"><a  class="thumbnail"  class="img-responsive" href="#"><div class="cut"><img  src="paints/thumb/'+file+'" /></div></a></li>';
-                        });
-                    page+='</ul><script>$(document).ready(function() {$("#auto-loop").lightGallery({caption:true,mode:\'fade\'});});<\/script>';
+                            status = status.split('\n').join('').split(' ').join('')
+
+                            page += '<li data-title="'+caption+'" data-desc="'+description+'" data-src="paints/'+file+'"><a  class="thumbnail"  class="img-responsive" href="#"><div class="cut">';
+                            if (status!='none'){                          
+                            page += '<h3>'+status+'</h3>';}
+                            
+                            page += '<img  src="paints/thumb/'+file+'" /></div></a></li>';
+                        
+                            
+                            });
+                    page+='</ul><script>$(document).ready(function() {$("#auto-loop").lightGallery({caption:true,mode:\'fade\',desc:true});});<\/script>';
                     $('#gal').empty().append(page).fadeIn('slow');
                 }
             });
