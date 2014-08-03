@@ -53,4 +53,117 @@
         </status>
 
     </paint>
+       <paint>
+        <file>
+            saya.jpg
+        </file>
+        <description>
+           Saya
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+    
+    
+       <paint>
+        <file>
+            ravi.jpg
+        </file>
+        <description>
+Ravi
+           </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+    
+       <paint>
+        <file>
+            nymph.jpg
+        </file>
+        <description>
+         Nymph
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+    
+    
+       <paint>
+        <file>
+            dragon.jpg
+        </file>
+        <description>
+            Buena Vista Social Club
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+       <paint>
+        <file>
+            iva.jpg
+        </file>
+        <description>
+            Buena Vista Social Club
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+       <paint>
+        <file>
+            coco.jpg
+        </file>
+        <description>
+            Buena Vista Social Club
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+       <paint>
+        <file>
+            fire.jpg
+        </file>
+        <description>
+            Buena Vista Social Club
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+       <paint>
+        <file>
+            ravens.jpg
+        </file>
+        <description>
+            Buena Vista Social Club
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
+       <paint>
+        <file>
+            davis.jpg
+        </file>
+        <description>
+            Buena Vista Social Club
+        </description>
+        <status>
+            Sold
+        </status>
+
+    </paint>
 </paints>
