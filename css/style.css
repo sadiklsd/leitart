@@ -97,7 +97,7 @@ body {
     margin: 0;
 
 
- 
+
     width: 100%;
     height: 100%;
     font-family: 'traveling__typewriterregular' !important;
@@ -113,6 +113,6 @@ background: linear-gradient(to right top,  #023 0%,#000000 50%,#000 100%); /* W3
 .navbar{
     background: linear-gradient(to left,  #023 0%,#000000 50%,#000 100%); /* W3C */
 
-    
-    
+
+
 }
